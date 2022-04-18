@@ -43,7 +43,6 @@ public class Users {
         if (corretCount == ConstantsNumbers.CORRECT_NUMBER) {
             return true;
         }
-
         return false;
     }
 

@@ -5,7 +5,6 @@ import java.util.List;
 public class BaseBallRule {
 
     private int matchedNumberCount;
-
     private int strikeCount;
     private int ballCount;
 
