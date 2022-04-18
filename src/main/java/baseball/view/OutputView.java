@@ -21,16 +21,20 @@ public class OutputView {
     }
 
     private void printThreeCorrectCount(int ballCount, int strikeCount) {
+        isThreeBallOrIsThreeStrike(ballCount, strikeCount);
+
+        if(!(ballCount == 3 || strikeCount == 3)) {
+            System.out.println(String.format(ConstantsMessages.BASEBALL_RESULT_MESSAGE, ballCount, strikeCount));
+        }
+    }
+
+    private void isThreeBallOrIsThreeStrike(int ballCount, int strikeCount) {
         if(ballCount == 3) {
             System.out.println(ConstantsMessages.BASEBALL_3BALL_MESSAGE);
         }
 
         if(strikeCount == 3) {
             System.out.println(ConstantsMessages.BASEBALL_3STRIKE_MESSAGE);
-        }
-
-        if(!(ballCount == 3 || strikeCount == 3)) {
-            System.out.println(String.format(ConstantsMessages.BASEBALL_RESULT_MESSAGE, ballCount, strikeCount));
         }
     }
 
