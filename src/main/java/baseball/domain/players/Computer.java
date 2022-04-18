@@ -11,8 +11,13 @@ public class Computer {
 
     private List<Integer> computerNumbers;
 
+    private static Computer computer;
+
     public static Computer getComputer() {
-        Computer computer = new Computer();
+
+        if(computer == null) {
+            computer = new Computer();
+        }
         computer.computerNumberSetup();
         return computer;
     }
