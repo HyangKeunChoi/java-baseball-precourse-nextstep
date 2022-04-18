@@ -4,7 +4,6 @@ import baseball.domain.constants.ConstantsNumbers;
 
 public class ReStartRule {
     public boolean isRestart(String restartInput) {
-
         if(isValidRestartNumber(restartInput)) {
             return ConstantsNumbers.RESTART_NUMBER == Integer.valueOf(restartInput);
         }
